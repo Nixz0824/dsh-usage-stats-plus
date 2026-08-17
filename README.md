@@ -7,6 +7,8 @@ Fork 自 [Ychris12138/dsh-usage-stats](https://github.com/Ychris12138/dsh-usage-
 ![License](https://img.shields.io/github/license/Nixz0824/dsh-usage-stats-plus)
 ![DSH](https://img.shields.io/badge/DSH-0.1.x-blue)
 
+![用量与余额面板](docs/images/usage-panel.png)
+
 ## 特性
 
 - **余额 = 官方实时值**：`GET /user/balance` 直接拉取，5 分钟缓存 + 手动刷新，无任何本地估算
