@@ -1,0 +1,7 @@
+node_modules/
+*.tgz
+*.customized.js
+usage-stats-cache.json
+.DS_Store
+npm-debug.log*
+*.log

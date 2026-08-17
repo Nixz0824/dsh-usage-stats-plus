@@ -1,0 +1,53 @@
+{
+  "name": "dsh-usage-stats-plus",
+  "version": "0.3.0",
+  "description": "DSH 用量与余额面板增强版：官方余额实时拉取、逐事件精确计价（官方峰谷价目）、余额差值全渠道消耗估算、Codex 风格 Token 活动时间轴。Fork 自 dsh-usage-stats（Ychris12138，MIT）。",
+  "private": false,
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./pricing": "./lib/pricing.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "docs/"
+  ],
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "token-usage",
+    "balance",
+    "usage-stats",
+    "cost"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<YOUR_NAME>/dsh-usage-stats-plus.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-primitives"
+      ]
+    }
+  },
+  "scripts": {
+    "check": "node --check lib/index.js && node --check lib/usage.js && node --check lib/pricing.js && node --check lib/balance.js && node --check lib/subscriptions.js && node --check lib/accounts.js && node --check lib/client.js",
+    "test": "npm run check"
+  }
+}
