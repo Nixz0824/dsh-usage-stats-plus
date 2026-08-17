@@ -4,7 +4,7 @@
 
 Fork 自 [Ychris12138/dsh-usage-stats](https://github.com/Ychris12138/dsh-usage-stats)（MIT），在其 v0.2.0 基础上做了**计价引擎重构**与**UI 结构级重构**。
 
-![License](https://img.shields.io/github/license/<YOUR_NAME>/dsh-usage-stats-plus)
+![License](https://img.shields.io/github/license/Nixz0824/dsh-usage-stats-plus)
 ![DSH](https://img.shields.io/badge/DSH-0.1.x-blue)
 
 ## 特性
@@ -23,7 +23,7 @@ dsh plugin --profile web add "link:<本目录绝对路径>"   # 本地源码
 # 或发布后：
 dsh plugin --profile web add dsh-usage-stats-plus       # npm
 # 或：
-dsh plugin --profile web add github:<你的名字>/dsh-usage-stats-plus
+dsh plugin --profile web add github:Nixz0824/dsh-usage-stats-plus
 ```
 
 装完**刷新浏览器页面**（客户端 bundle 随页面加载）。重启后由 profile bundles 自动装配。
