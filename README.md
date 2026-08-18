@@ -30,15 +30,20 @@ Fork 自 [Ychris12138/dsh-usage-stats](https://github.com/Ychris12138/dsh-usage-
 
 ### 安装
 
+仓库是公开的，现在就可以装，不必等社区精选列表收录。
+
 ```bash
-dsh plugin --profile web add "link:<本目录绝对路径>"   # 本地源码
-# 或发布后：
-dsh plugin --profile web add dsh-usage-stats-plus       # npm
-# 或：
+# 推荐：GitHub Release 预构建包
+dsh plugin --profile web add https://github.com/Nixz0824/dsh-usage-stats-plus/releases/latest/download/dsh-usage-stats-plus-0.3.0.tgz
+
+# 或从 GitHub 源码安装
 dsh plugin --profile web add github:Nixz0824/dsh-usage-stats-plus
+
+# 本地源码
+dsh plugin --profile web add "link:<本目录绝对路径>"
 ```
 
-装完**刷新浏览器页面**（客户端 bundle 随页面加载）。重启后由 profile bundles 自动装配。
+装完**刷新浏览器页面**（客户端 bundle 随页面加载）。重启 `dsh web` 一次更稳。
 
 ### 计价口径（与官方账单核对过）
 
@@ -123,15 +128,20 @@ Fork of [Ychris12138/dsh-usage-stats](https://github.com/Ychris12138/dsh-usage-s
 
 ### Install
 
+The repository is public. You can install it now; listing on the community catalog is separate.
+
 ```bash
-dsh plugin --profile web add "link:<absolute-path-to-this-folder>"   # local source
-# or after publish:
-dsh plugin --profile web add dsh-usage-stats-plus                    # npm
-# or:
+# Recommended: GitHub Release tarball
+dsh plugin --profile web add https://github.com/Nixz0824/dsh-usage-stats-plus/releases/latest/download/dsh-usage-stats-plus-0.3.0.tgz
+
+# Or from GitHub source
 dsh plugin --profile web add github:Nixz0824/dsh-usage-stats-plus
+
+# local source
+dsh plugin --profile web add "link:<absolute-path-to-this-folder>"
 ```
 
-**Reload the browser page** after install (the client bundle loads with the page). A restart lets profile bundles mount it automatically.
+**Reload the browser page** after install (the client bundle loads with the page). Restart `dsh web` once if the sidebar entry does not appear.
 
 ### Pricing rules (checked against the official bill)
 
