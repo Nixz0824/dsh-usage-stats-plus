@@ -29,6 +29,10 @@
     "cost"
   ],
   "license": "MIT",
+  "homepage": "https://github.com/Nixz0824/dsh-usage-stats-plus#readme",
+  "bugs": {
+    "url": "https://github.com/Nixz0824/dsh-usage-stats-plus/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nixz0824/dsh-usage-stats-plus.git"
@@ -48,6 +52,7 @@
   },
   "scripts": {
     "check": "node --check lib/index.js && node --check lib/usage.js && node --check lib/pricing.js && node --check lib/balance.js && node --check lib/subscriptions.js && node --check lib/accounts.js && node --check lib/client.js",
-    "test": "npm run check"
+    "smoke": "node scripts/smoke-client.mjs",
+    "test": "npm run check && npm run smoke"
   }
 }
