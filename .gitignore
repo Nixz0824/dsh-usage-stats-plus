@@ -3,5 +3,8 @@ node_modules/
 *.customized.js
 usage-stats-cache.json
 .DS_Store
+Thumbs.db
+.idea/
+.vscode/
 npm-debug.log*
 *.log
